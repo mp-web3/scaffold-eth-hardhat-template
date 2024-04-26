@@ -13,6 +13,7 @@ import "hardhat-deploy-ethers";
 // If not set, it uses ours Alchemy's default API key.
 // You can get your own at https://dashboard.alchemyapi.io
 const providerApiKey = process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF";
+const providerApiKeyInfura = process.env.INFURA_API_KEY || "";
 // If not set, it uses the hardhat account 0 private key.
 const deployerPrivateKey =
   process.env.DEPLOYER_PRIVATE_KEY ?? "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
@@ -30,7 +31,7 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  defaultNetwork: "localhost",
+  defaultNetwork: "lineaSepolia",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -52,6 +53,14 @@ const config: HardhatUserConfig = {
     },
     sepolia: {
       url: `https://eth-sepolia.g.alchemy.com/v2/${providerApiKey}`,
+      accounts: [deployerPrivateKey],
+    },
+    linea: {
+      url: `https://linea-mainnet.infura.io/v3/${providerApiKeyInfura}`,
+      accounts: [deployerPrivateKey],
+    },
+    lineaSepolia: {
+      url: `https://linea-sepolia.infura.io/v3/${providerApiKeyInfura}`,
       accounts: [deployerPrivateKey],
     },
     arbitrum: {

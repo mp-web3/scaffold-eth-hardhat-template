@@ -2304,7 +2304,7 @@ __metadata:
     use-debounce: ~8.0.4
     usehooks-ts: 2.13.0
     vercel: ~32.4.1
-    viem: 2.8.16
+    viem: 2.9.9
     wagmi: 2.5.12
     zustand: ~4.1.2
   languageName: unknown
@@ -14742,9 +14742,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:2.8.16":
-  version: 2.8.16
-  resolution: "viem@npm:2.8.16"
+"viem@npm:2.9.9":
+  version: 2.9.9
+  resolution: "viem@npm:2.9.9"
   dependencies:
     "@adraffy/ens-normalize": 1.10.0
     "@noble/curves": 1.2.0
@@ -14759,7 +14759,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: f58029cf1f39d662c51f4ebc9c71dc407522161bac2de1112170061d5bfe90ce1802bde701d567022dc1fd83d22ec4df031bcf55d943481159e50acf984292ae
+  checksum: 4504f6f78978834352b4fa48a433ccb587b913f7783023ee8fd42446589efdc748bf9789e43e1947020815dced9e488c5c375dda961db3f85393a756653ce2a8
   languageName: node
   linkType: hard
 
